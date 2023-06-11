@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "fstream": "cpp",
+        "iterator": "cpp",
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocinfo": "cpp",
+        "xstring": "cpp"
+    }
+}
