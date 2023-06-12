@@ -106,9 +106,12 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT);
 
         glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture1obj);
+        glBindTexture(GL_TEXTURE_2D, *(texture1.object));
+        texture1.ReloadTexture(linearFiltering);
+
         glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture2obj);
+        glBindTexture(GL_TEXTURE_2D, *(texture2.object));
+        texture2.ReloadTexture(linearFiltering);
                
         myShader.UseProgram();
 

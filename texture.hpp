@@ -15,8 +15,8 @@ public:
     Texture(const char* filePath, bool linFiltering, int rgbType, GLuint* obj) : _path(filePath), linearFiltering(linFiltering), 
     _colorType(rgbType), object(obj)
     {   
-        ReloadTexture();
+        ReloadTexture(linFiltering);
     } 
 
-    void ReloadTexture();
+    void ReloadTexture(bool);
 };
